@@ -3,14 +3,14 @@ pipeline {
     
     environment {
         // Define the Docker image name here for reuse
-        IMAGE_NAME = 'phaneendrakatakam/nodejsapp'
+        IMAGE_NAME = 'nandavamsi/nodejsapp'
     }
 
     stages {
         stage('Checkout Source') {
             steps {
                 // Properly checkout your Git repository
-                git branch: 'master', credentialsId: 'git', url: 'https://github.com/phaneendrakatakam/Node.js.git'
+                git branch: 'master', credentialsId: 'git', url: 'https://github.com/Nandavamsi07/Node.js-master.git'
             }
         }
         
